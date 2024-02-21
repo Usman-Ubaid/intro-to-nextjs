@@ -1,12 +1,17 @@
+import NewTodoForm from "@/components/NewTodoForm";
+
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <div>
-      <h1>Dashboard Layout</h1>
-      {children}
+      <h1>Dashboard</h1>
+      <div>
+        <NewTodoForm />
+      </div>
+      <div> {children}</div>
     </div>
-  )
+  );
 }
